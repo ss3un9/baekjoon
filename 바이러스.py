@@ -1,8 +1,7 @@
-
 ## graph :  [[], [2, 5], [1, 3, 5], [2], [7], [1, 2, 6], [5], [4]]
 ## visited :  [0, 1, 0, 0, 0, 0, 0, 0]
-
 from collections import deque
+
 def dfs(v):
     visited[v]=1
     for nx in graph[v]:   
@@ -19,14 +18,9 @@ def bfs(v):
                 Q.append(nx)
                 visited[nx]=1
                 #print(visited)
-
-    
-
+               
 n=int(input())
 v=int(input())
-
-
-
 graph= [[] *(n+1) for _ in range(n+1)] # 노드 배열 
 #print(graph)
 visited=[0]*(n+1) 
