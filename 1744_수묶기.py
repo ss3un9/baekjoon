@@ -30,7 +30,7 @@ for i in range(0,len(minus),2):
         result.append(minus[i]*minus[i+1])
     else:
         result.append(minus[i])
-
+#print(tmp)
 answer=sum(result)+sum(tmp)
 
 print(answer)
